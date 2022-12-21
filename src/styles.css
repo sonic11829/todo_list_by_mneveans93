@@ -1,0 +1,62 @@
+:root {
+    --main: purple;
+    --mainBackground: gray;
+    --appBackground: goldenrod;
+    --buttonActive: silver;
+}
+
+html {
+    background-color: var(--mainBackground);
+    color: var(--main);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+#root {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    margin: auto;
+}
+
+.App {
+    background-color: var(--appBackground);
+    padding: 2%;
+    width: 50%;
+    border: solid var(--main) 1px;
+    border-radius: 50px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input {
+    border: solid var(--main) 1px;
+    border-radius: 5px;
+    background-color: var(--appBackground);
+    color: var(--main);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+}
+
+button:hover {
+    background-color: var(--buttonActive);
+    transition-duration: 500ms;
+}
+
+ul {
+    list-style: none;
+}
